@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1> vu phi hùng</h1>
-    <h2>test code</h2>
-    <h3>co ve dang ok day
-    </h3>
-    <div> chay tiep di nao</div>
+    <div class="container">
+        <h1>Flashcard </h1>
+        <div class="button">
+            <button class="button" id="add-card" onclick="addCard()" >add card</button>
+            <button class="button" id="select-card" onclick="selectCard()"> select card </button>
+        </div>
+    </div>
+    <div id="addFlashcard">
+        <h2>Create Flashcard</h2>
+        <p>Question</p>
+        <input id="question" class="input"  placeholder="Question" type="text">
+        <p>Answer</p>
+        <input id="answer" class="input" placeholder="Answer" type="text"> <br> 
+        <div class="button">
+            <button class="button" id="addNewFlashcard" onclick="addNewFlashcard()"> add </button> 
+            <button class="button" id="closesFlashcard" onclick="closeCard()"> close </button>
+        </div>
+    </div>
+    <div id="newFlashcards" ></div>
 </body>
 </html>

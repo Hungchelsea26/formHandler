@@ -3,6 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1 {
-    color: red;
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#dfdada;
+    padding: 10px;
+   
 }
+#add-card{
+    margin-right: 5px;
+}
+#addFlashcard{
+    display: none;
+    font-size: 15px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(230, 236, 239);
+    width: 370px;
+    height: 210px;
+    border: 2px solid red;
+    
+}
+#addFlashcard h2 {
+    text-align: center;
+    justify-content: center;
+}
+.input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+.button{
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(230, 236, 239);
+}
+#newFlashcards{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.flashcard{
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(252, 252, 252);
+    width: 370px;
+    height: 210px;
+    border: 2px solid red;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.answer{
+    display: none;
+}
+.question{
+
+}
+
